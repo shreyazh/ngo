@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ISHA - Indian Social Help Association</title>
+    <style>
+        /* Add your CSS styling here */
+        body {
+            font-family: Georgia, serif;
+            margin: 0;
+            padding: 0;
+        }
+       
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+       
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+       
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+       
+        .slideshow-container {
+            position: relative;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+       
+        .slide {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+       
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+       
+        .slide-caption {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+            font-size: 18px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ISHA - Indian Social Help Association</h1>
+    </header>
+
+    <div class="container">
+        <h2>Contributors</h2>
+       
+        <div class="slideshow-container">
+            <div class="slide">
+                <img src="org1.jpg" alt="Organization 1">
+                <div class="slide-caption">Organization 1</div>
+            </div>
+           
+            <div class="slide">
+                <img src="person1.jpg" alt="Person 1">
+                <div class="slide-caption">Person 1</div>
+            </div>
+           
+            <div class="slide">
+                <img src="org2.jpg" alt="Organization 2">
+                <div class="slide-caption">Organization 2</div>
+            </div>
+           
+            <!-- Add more slides here -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slideshow-container').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: false,
+                arrows: false,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear'
+            });
+        });
+    </script>
+</body>
+</html>
+

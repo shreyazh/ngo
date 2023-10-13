@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ISHA - Give Advice</title>
+    <style>
+        /* Add your CSS styling here */
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+       
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+       
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+       
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+       
+        p {
+            margin-bottom: 10px;
+            color: #666;
+        }
+       
+        label {
+            font-weight: bold;
+        }
+       
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+       
+        button[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+       
+        button[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ISHA - Give Advice</h1>
+    </header>
+
+    <div class="container">
+        <h2>Give Advice to ISHA</h2>
+        <p>Thank you for your willingness to provide advice to ISHA! Please use the form below to share your advice:</p>
+       
+        <form action="#" method="POST">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="advice">Advice:</label>
+                <textarea id="advice" name="advice" rows="10" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Submit Advice</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

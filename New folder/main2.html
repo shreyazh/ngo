@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ISHA - Indian Social Help Association</title>
+    <style>
+        /* Add your CSS styling here */
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+       
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+       
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+       
+        p {
+            margin-bottom: 10px;
+        }
+       
+        a {
+            color: #333;
+            text-decoration: underline;
+        }
+        .side-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #f7f7f7;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+       
+        .side-menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+       
+        .side-menu li {
+            margin-bottom: 10px;
+        }
+        .hamburger {
+            display: block;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 30px;
+            height: 20px;
+            background-color: #333;
+            cursor: pointer;
+        }
+       
+        .hamburger:before,
+        .hamburger:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: #fff;
+            transition: transform 0.3s ease;
+        }
+       
+        .hamburger:before {
+            top: 0;
+        }
+       
+        .hamburger:after {
+            bottom: 0;
+        }
+       
+        .hamburger.active:before {
+            transform: rotate(45deg);
+            top: 8px;
+        }
+       
+        .hamburger.active:after {
+            transform: rotate(-45deg);
+            bottom: 8px;
+        }
+       
+        .hamburger.active .side-menu {
+            display: block;
+        }
+       
+        .contribute-button {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+       
+        .contribute-button:hover {
+            background-color: #666;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ISHA - Indian Social Help Association</h1>
+    </header>
+
+    <div class="container">
+        <h2>Welcome to ISHA!</h2>
+        <p>ISHA is dedicated to raising awareness about the importance of educating women and children in India.</p>
+        <p>Our mission is to empower individuals and communities by providing access to quality education, fostering gender equality, and creating a brighter future for everyone.</p>
+        <p>We believe that education is a fundamental right that should be available to all, regardless of their gender or socio-economic background.</p>
+        <p>By promoting education for women and children, we aim to break the cycle of poverty, empower individuals to make informed decisions, and contribute to the overall development of society.</p>
+        <p>Through our initiatives, we strive to create an inclusive and equitable society where every child and woman has the opportunity to receive an education and fulfill their potential.</p>
+       
+        <p>For a detailed analysis of the current condition of education for Indian women, please visit <a href="sec.html">Education: Indian Women</a> webpage with charts and diagrams.</p>
+        <p>The current situation for kids is better, but there are challenges too, let's check it out on <a href="ter.html">Child Education in India</a>.</p> 
+        <div>
+            <a href="con.html" class="contribute-button">Contribute</a>
+        </div>
+        <div class="hamburger">
+            <div class="side-menu">
+                <ul>
+                    <li><a href="mis.html">Mission</a></li>
+                    <li><a href="cont.html">Contributors</a></li>
+                    <li><a href="acc.html">Accomplishments</a></li>
+                    <li><a href="op.html">Public Ideas</a></li>
+                    <li><a href="guidelines.html">Guidelines</a></li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            const hamburger = document.querySelector('.hamburger');
+            const sideMenu = document.querySelector('.side-menu');
+    
+            hamburger.addEventListener('click', function () {
+                hamburger.classList.toggle('active');
+                sideMenu.classList.toggle('active');
+            });
+        </script>
+</body>
+</html>
